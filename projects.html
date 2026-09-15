@@ -1,90 +1,358 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title> Projects </title>
-        
-        <link rel="stylesheet" href="resources/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Projects</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="../resources/css/styles.css">
     </head>
 
     <body>
+
         <header>
-            <img src="resources/img/Website_Header.png" alt="Isha Shah" class="header">
+            <img src="../resources/img/Website_Header.png"
+                 alt="Isha Shah"
+                 class="header">
         </header>
 
-        <nav>
-            <button onclick="location.href='index.html'"> Home </button>
-            <button onclick="location.href='hobbies.html'"> Hobbies </button>
-            <button onclick="location.href='projects.html'"> Projects </button>
-            <button onclick="location.href='resume.html'"> Resume </button>
+
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-sm custom-navbar">
+
+            <div class="container">
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNav"
+                    aria-controls="mainNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center"
+                     id="mainNav">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="hobbies.html">
+                                Hobbies
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="projects.html">
+                                Projects
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.html">
+                                Resume
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
         </nav>
 
-        <main>
+
+        <main class="container py-5">
+
             <h1>
                 My Projects
             </h1>
 
             <p>
-                Some of the projects I have worked on include my final project for CSCI 1300, a personal website I made for a club, and a book I wrote.
-                These projects have allowed me to apply my skills in programming, web development, and writing to create something tangible.
+                Some of the projects I have worked on include my final project
+                for CSCI 1300, a personal website I made for a club, and a book
+                I wrote. These projects have allowed me to apply my skills in
+                programming, web development, and writing to create something
+                tangible.
             </p>
+
             <section>
+
                 <h2>
                     My Favorite Projects
                 </h2>
 
-                <h3>
-                    Journey Through the Genome
-                </h3>
 
-                <div class="project-card">
-                    <img src="resources/img/Genome.png" alt="Genome" class="project">
+                <!-- Bootstrap Accordion -->
+                <div class="accordion" id="projectsAccordion">
 
-                    <p>
-                        The final project for CSCI 1300 was to create a game using C++. It was like Candy Land, but with more elements.
-                        It was genome-themed and each colored square had a different outcome. There were tasks or riddles associated with each tile, and you would move on if you completed the task.
-                        There was an easy path and a hard path which the player could choose from. The winner was based on who had the most points at the end of the game.
-                    </p>
+
+                    <!-- Journey Through the Genome -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header" id="headingGenome">
+
+                            <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseGenome"
+                                aria-expanded="true"
+                                aria-controls="collapseGenome">
+
+                                Journey Through the Genome
+
+                            </button>
+
+                        </h3>
+
+
+                        <div
+                            id="collapseGenome"
+                            class="accordion-collapse collapse show"
+                            aria-labelledby="headingGenome"
+                            data-bs-parent="#projectsAccordion">
+
+                            <div class="accordion-body">
+
+                                <div class="row align-items-center g-4">
+
+                                    <div class="col-12 col-md-4 text-center">
+
+                                        <img
+                                            src="../resources/img/Genome.png"
+                                            alt="Genome"
+                                            class="project img-fluid">
+
+                                    </div>
+
+                                    <div class="col-12 col-md-8">
+
+                                        <p>
+                                            The final project for CSCI 1300 was
+                                            to create a game using C++. It was
+                                            like Candy Land, but with more
+                                            elements. It was genome-themed and
+                                            each colored square had a different
+                                            outcome. There were tasks or riddles
+                                            associated with each tile, and you
+                                            would move on if you completed the
+                                            task.
+
+                                            There was an easy path and a hard
+                                            path which the player could choose
+                                            from. The winner was based on who
+                                            had the most points at the end of
+                                            the game.
+                                        </p>
+
+                                        <span class="badge bg-primary">
+                                            C++
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Personal Website -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header" id="headingWebsite">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseWebsite"
+                                aria-expanded="false"
+                                aria-controls="collapseWebsite">
+
+                                Personal Website
+
+                            </button>
+
+                        </h3>
+
+
+                        <div
+                            id="collapseWebsite"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingWebsite"
+                            data-bs-parent="#projectsAccordion">
+
+                            <div class="accordion-body">
+
+                                <div class="row align-items-center g-4">
+
+                                    <div class="col-12 col-md-4 text-center">
+
+                                        <img
+                                            src="../resources/img/Personal_Website.png"
+                                            alt="Personal Website"
+                                            class="project img-fluid">
+
+                                    </div>
+
+                                    <div class="col-12 col-md-8">
+
+                                        <p>
+                                            One of the projects that I worked
+                                            on for Women in Computing was to
+                                            create a personal website. I created
+                                            a website similar to this one, but
+                                            it is not up to date with everything.
+
+                                            It was a great way to apply my web
+                                            development skills and create a
+                                            space to showcase my work. This
+                                            website is now a more up-to-date
+                                            version of that project.
+                                        </p>
+
+                                        <span class="badge bg-success">
+                                            Web Development
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- When Vinery meets Water -->
+                    <div class="accordion-item">
+
+                        <h3 class="accordion-header" id="headingBook">
+
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseBook"
+                                aria-expanded="false"
+                                aria-controls="collapseBook">
+
+                                <i>When Vinery meets Water</i>
+
+                            </button>
+
+                        </h3>
+
+
+                        <div
+                            id="collapseBook"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="headingBook"
+                            data-bs-parent="#projectsAccordion">
+
+                            <div class="accordion-body">
+
+                                <div class="row align-items-center g-4">
+
+                                    <div class="col-12 col-md-4 text-center">
+
+                                        <img
+                                            src="../resources/img/When_Vinery_meets_Water_Cover.png"
+                                            alt="When Vinery meets Water"
+                                            class="book-cover img-fluid">
+
+                                    </div>
+
+                                    <div class="col-12 col-md-8">
+
+                                        <p>
+                                            This is one of the projects that
+                                            isn't related to programming, but
+                                            still deserves to be mentioned. I
+                                            wrote a fantasy/sci-fi book called
+                                            <i>When Vinery meets Water</i>.
+
+                                            It was the first book I wrote and it
+                                            was a great entry point into creative
+                                            writing. I am currently working on
+                                            the third draft and am also writing
+                                            the second book in the trilogy.
+                                        </p>
+
+                                        <p>
+                                            <u>Synopsis:</u>
+                                            <br>
+                                            Two best friends, Jenna and Sofia,
+                                            embark on a mysterious mission after
+                                            receiving a series of unexpected
+                                            letters. But for Jenna, the journey
+                                            is more than just a quest to find an
+                                            ancient artifact; it's a chance to
+                                            discover who she is again.
+                                        </p>
+
+                                        <span class="badge bg-warning text-dark">
+                                            Creative Writing
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <h3>
-                    Personal Website
-                </h3>
-
-                <div class="project-card">
-                    <img src="resources/img/Personal_Website.png" alt="Personal Website" class="project">
-
-                    <p>
-                        One of the projects that I worked on for Women in Computing was to create a personal website. I created a website similar to this one, but it is not up to date with everything.
-                        It was a great way to apply my web development skills and create a space to showcase my work.
-                        This website is now a more up-to-date version of that project.
-                    </p>
-                </div>
-
-                <h3>
-                    When Vinery meets Water
-                </h3>
-
-                <div class="project-card">
-                    <img src="resources/img/When_Vinery_meets_Water_Cover.png" alt="When Vinery meets Water" class="book-cover">
-
-                    <p>
-                        This is one of the projects that isn't related to programming, but still deserves to be mentioned. I wrote a fantasy/sci-fi book called <i>When Vinery meets Water</i>.
-                        It was the first book I wrote and it was a great entry point into creative writing. I am currently working on the third draft and am also writing the second book in the trilogy.
-                        <br> <br>
-                        <u>Synopsis:</u>
-                        <br>
-                        Two best friends, Jenna and Sofia, embark on a mysterious mission after receiving a series of unexpected letters.
-                        But for Jenna, the journey is more than just a quest to find an ancient artifact; it's a chance to discover who she is again.
-                    </p>
-                </div>
             </section>
+
         </main>
 
-        <footer>
-            <img src="resources/img/linkedin.png" alt="linkedin logo" class="logo"> <a href="https://www.linkedin.com/in/ishashah06/">LinkedIn </a>
+
+        <footer class="container text-center py-4">
+
+            <img
+                src="../resources/img/linkedin.png"
+                alt="linkedin logo"
+                class="logo">
+
+            <a href="https://www.linkedin.com/in/ishashah06/">
+                LinkedIn
+            </a>
+
         </footer>
+
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+        </script>
 
     </body>
 </html>

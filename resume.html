@@ -1,34 +1,104 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title> Resume </title>
-        
-        <link rel="stylesheet" href="resources/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Resume</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="../resources/css/styles.css">
     </head>
 
     <body>
+
         <header>
-            <img src="resources/img/Website_Header.png" alt="Isha Shah" class="header">
+            <img src="../resources/img/Website_Header.png"
+                 alt="Isha Shah"
+                 class="header">
         </header>
 
-        <nav>
-            <button onclick="location.href='index.html'"> Home </button>
-            <button onclick="location.href='hobbies.html'"> Hobbies </button>
-            <button onclick="location.href='projects.html'"> Projects </button>
-            <button onclick="location.href='resume.html'"> Resume </button>
-        </nav>
 
-        <main>
-            <div class="download-container">
-                <a href="resources/Resume_Sep'26.pdf" download>
-                    <button type="button"> Download Resume as PDF </button>
-                </a>
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-sm custom-navbar">
+
+            <div class="container">
+
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNav"
+                    aria-controls="mainNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center"
+                     id="mainNav">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="hobbies.html">
+                                Hobbies
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">
+                                Projects
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="resume.html">
+                                Resume
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
             </div>
 
+        </nav>
+
+
+        <main class="container py-5">
+
+            <div class="download-container">
+
+                <a
+                    href="../resources/Resume_Sep'26.pdf"
+                    download
+                    class="btn btn-primary">
+
+                    Download Resume as PDF
+
+                </a>
+
+            </div>
+
+
             <section>
+
                 <div class="resume-header">
+
                     <h1>
                         Isha Shah
                     </h1>
@@ -36,100 +106,192 @@
                     <p>
                         shahisha116@gmail.com | 720-975-4871 | Colorado
                     </p>
+
                 </div>
 
-                <div class="education">
-                    <h2>
-                        Education
-                    </h2>
 
-                    <h3>
-                        University of Colorado Boulder
-                    </h3>
-                    <p>
-                        Bachelor of Science in Computer Science | Expected May 2029
-                    </p>
+                <div class="row g-4">
 
-                    <h3>
-                        Skyline High School
-                    </h3>
-                    <p>
-                        P-tech Valedictorian and earned an Associate degree in Applied Science. | May 2025
-                    </p>
 
-                    <h3>
-                        Front Range Community College
-                    </h3>
-                    <p>
-                        Associate Degree in Computer Information Systems | May 2025
-                    </p>
+                    <!-- Education -->
+                    <div class="col-12 col-lg-5">
+
+                        <div class="education">
+
+                            <h2>
+                                Education
+                            </h2>
+
+                            <h3>
+                                University of Colorado Boulder
+                            </h3>
+
+                            <p>
+                                Bachelor of Science in Computer Science |
+                                Expected May 2029
+                            </p>
+
+                            <h3>
+                                Skyline High School
+                            </h3>
+
+                            <p>
+                                P-tech Valedictorian and earned an Associate
+                                degree in Applied Science. | May 2025
+                            </p>
+
+                            <h3>
+                                Front Range Community College
+                            </h3>
+
+                            <p>
+                                Associate Degree in Computer Information Systems |
+                                May 2025
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Skills and Experience -->
+                    <div class="col-12 col-lg-7">
+
+                        <div class="skills">
+
+                            <h2>
+                                Skills
+                            </h2>
+
+                            <ul>
+
+                                <li>
+                                    Technical: HTML, Python, C++
+                                </li>
+
+                                <li>
+                                    Time Management
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+
+                        <div class="experience">
+
+                            <h2>
+                                Work Experience
+                            </h2>
+
+                            <h3>
+                                International Business Machines
+                            </h3>
+
+                            <p>
+                                Network Infrastructure Co-op |
+                                August 2025 - Present
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Continued the parser program I worked on
+                                    during the summer.
+                                </li>
+
+                                <li>
+                                    Worked on a dashboard showing the status
+                                    of different network objects.
+                                </li>
+                            </ul>
+
+
+                            <h3>
+                                University of Colorado Boulder
+                            </h3>
+
+                            <p>
+                                Journey Leader |
+                                June 2026 - August 2026
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Helped 6,000+ first-year and transfer
+                                    students with orientation and fall welcome
+                                    activities.
+                                </li>
+                            </ul>
+
+
+                            <h3>
+                                University of Colorado Boulder
+                            </h3>
+
+                            <p>
+                                Undergraduate Research Assistant |
+                                January 2026 - April 2026
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Worked on a study to explore how engineers'
+                                    experiences, competencies, and values have
+                                    shaped their career trajectories.
+                                </li>
+                            </ul>
+
+
+                            <h3>
+                                International Business Machines
+                            </h3>
+
+                            <p>
+                                Level Two Intern- Network Infrastructure |
+                                June 2025 - August 2025
+                            </p>
+
+                            <ul>
+                                <li>
+                                    Developed a Python program that parses YAML
+                                    files, tallies specific parts, and is
+                                    searchable.
+                                </li>
+
+                                <li>
+                                    Helped create the front-end using Python
+                                    that displays the output in a dashboard.
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="skills">
-                    <h2>
-                        Skills
-                    </h2>
-
-                    <ul>
-                        <li> Technical: HTML, Python, C++ </li>
-                        <li> Time Management</li>
-                    </ul>
-                </div>
-
-                <div class="experience">
-                    <h2>
-                        Work Experience
-                    </h2>
-
-                    <h3>
-                        International Business Machines
-                    </h3>
-                    <p>
-                        Network Infrastructure Co-op | August 2025 - Present
-                    </p>
-                    <ul>
-                        <li> Continued the parser program I worked on during the summer.</li>
-                        <li> Worked on a dashboard showing the status of different network objects. </li>
-                    </ul>
-
-                    <h3>
-                        University of Colorado Boulder
-                    </h3>
-                    <p>
-                        Journey Leader | June 2026 - August 2026
-                    </p>
-                    <ul>
-                        <li> Helped 6,000+ first-year and transfer students with orientation and fall welcome activities. </li>
-                    </ul>
-
-                    <h3>
-                        University of Colorado Boulder
-                    </h3>
-                    <p>
-                        Undergraduate Research Assistant | January 2026 - April 2026
-                    </p>
-                    <ul>
-                        <li> Worked on a study to explore how engineers' experiences, competencies, and values have shaped their career trajectories. </li>
-                    </ul>
-
-                    <h3>
-                        International Business Machines
-                    </h3>
-                    <p>
-                        Level Two Intern- Network Infrastructure | June 2025 - August 2025
-                    </p>
-                    <ul>
-                        <li> Develped a Python program that parses YAML files, tallies specific parts, and is searchable. </li>
-                        <li> Helped create the front-end using Python that displays the output in a dashboard. </li>
-                    </ul>
-                </div>
             </section>
 
         </main>
 
-        <footer>
-            <img src="resources/img/linkedin.png" alt="linkedin logo" class="logo"> <a href="https://www.linkedin.com/in/ishashah06/">LinkedIn </a>
+
+        <footer class="container text-center py-4">
+
+            <img
+                src="../resources/img/linkedin.png"
+                alt="linkedin logo"
+                class="logo">
+
+            <a href="https://www.linkedin.com/in/ishashah06/">
+                LinkedIn
+            </a>
+
         </footer>
+
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+        </script>
 
     </body>
 </html>
