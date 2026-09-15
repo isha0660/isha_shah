@@ -1,44 +1,7 @@
-:root {
-    --purple: #8B5CF6;
-    --purple-dark: #6D3FC7;
-    --mauve: #A85D9F;
-    --coral: #E77C78;
-    --orange: #F28A5B;
-    --background: #FCFAFD;
-    --surface: #FFFFFF;
-    --surface-alt: #F5F1F7;
-    --text: #222222;
-    --muted-text: #5F5F5F;
-    --border: #DDD5E2;
-}
-
 body {
     font-size: 14pt;
-    color: var(--text);
-    background-color: var(--background);
-    line-height: 1.6;
-}
-
-h1 {
-    font-size: 24pt;
-    font-weight: 700;
-    color: black;
-    margin-bottom: 1.5rem;
-}
-
-h2 {
-    color: var(--purple-dark);
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-h3 {
-    color: var(--text);
-    font-weight: 600;
-}
-
-p {
-    color: var(--text);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -47,68 +10,61 @@ p {
 .custom-navbar {
     text-align: center;
     width: 100%;
-    background-color: var(--surface);
-    border-bottom: 1px solid var(--border);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    background-color: white;
 }
 
 .custom-navbar .nav-link {
-    color: var(--text);
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 8px;
+    color: black;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     margin: 5px;
     padding: 8px 20px;
-    font-weight: 500;
-    transition: 0.2s ease;
 }
 
 .custom-navbar .nav-link:hover {
-    background-color: #F0E9F7;
-    color: var(--purple-dark);
+    background-color: #e5e5e5;
+    color: rgb(229, 31, 31);
 }
 
 .custom-navbar .nav-link.active {
-    background-color: var(--purple);
+    background-color: rgb(229, 31, 31);
     color: white;
 }
 
 .custom-navbar .navbar-toggler {
-    border-color: var(--border);
+    border-color: #999;
 }
 
 .custom-navbar .navbar-toggler-icon {
-    filter: invert(40%);
+    filter: invert(1);
 }
 
 
 /* General */
-.btn-primary {
-    background-color: #555555;
-    border-color: #555555;
-    color: white;
-}
-
-.btn-primary:hover {
-    background-color: #333333;
-    border-color: #333333;
-    color: white;
-}
 
 footer {
     text-align: center;
     font-size: 12pt;
-    color: var(--muted-text);
-    border-top: 1px solid var(--border);
-    margin-top: 3rem;
 }
 
-footer a {
-    color: var(--purple-dark);
+h1 {
+    font-size: 24pt;
+    margin-left: 4%;
+    color: rgb(229, 31, 31);
 }
 
-footer a:hover {
-    color: var(--coral);
+h2 {
+    margin-left: 6%;
+}
+
+h3 {
+    margin-left: 8%;
+}
+
+p {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 
@@ -116,10 +72,16 @@ footer a:hover {
 
 .welcome {
     margin-top: 5%;
-    background-color: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-me p {
+    flex: 1;
 }
 
 .profile {
@@ -131,96 +93,80 @@ footer a:hover {
 
 img.profile {
     margin-left: 0;
-    border: 3px solid black;
+    border: 0.5px solid black;
 }
 
 
 /* Hobbies */
+/* Custom CSS intentionally overrides Bootstrap */
 
 .hobby-card {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    height: 100%;
-    gap: 15px;
-    padding: 25px;
-    background-color: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: 0.2s ease;
-}
+    gap: 20px;
 
-.hobby-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 7px 16px rgba(0, 0, 0, 0.12);
+    padding: 25px;
+
+    background-color: rgb(245, 245, 245);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .hobby-card p {
-    margin: 0;
-}
-
-.hobby-card h3 {
-    margin-left: 0;
-    text-align: center;
+    margin: 5px;
+    flex: 1;
 }
 
 .hobby {
-    width: 100%;
-    max-width: 250px;
+    width: 200px;
     height: auto;
     border-radius: 10px;
-    border: 1px solid var(--border);
 }
 
 .hobby-override {
     width: 100%;
 }
 
+.hobby-card h3 {
+    margin-left: 0;
+}
+
+img.hobby {
+    width: 250px;
+    border: 0.5px solid black;
+}
+
+@media (max-width: 576px) {
+
+    .hobby-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hobby-card p {
+        margin: 10px;
+    }
+
+    .hobby {
+        width: 200px;
+    }
+
+}
+
 
 /* Projects */
 
-/* Make the accordion narrower and center it */
-#projectsAccordion {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-/* Override the general h3 margin */
-#projectsAccordion .accordion-header {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-#projectsAccordion .accordion-button {
-    font-weight: 600;
-}
-
-#projectsAccordion .accordion-button:not(.collapsed) {
-    background-color: #F0E9F7;
-    color: var(--purple-dark);
-}
-
-/* Override the general paragraph margins */
-#projectsAccordion .accordion-body p {
-    margin-left: 0;
-    margin-right: 0;
-}
-
 .project {
-    width: 100%;
-    max-width: 250px;
+    width: 250px;
     height: auto;
     border-radius: 10px;
-    border: 1px solid var(--border);
+    border: 0.5px solid black;
 }
 
 .book-cover {
     width: 150px;
     height: auto;
     border-radius: 10px;
-    border: 1px solid var(--border);
 }
 
 
@@ -231,104 +177,56 @@ img.profile {
     margin-bottom: 15px;
 }
 
-.resume {
-    background-color: #FFFFFF;
-    padding: 40px;
-    border: 1px solid #D6D6D6;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
 .resume-header {
     text-align: center;
-    border-bottom: 2px solid #333333;
+    border-bottom: 2px solid #333;
     padding-bottom: 15px;
-    margin-bottom: 30px;
 }
 
 .resume-header h1 {
-    color: #222222;
     font-size: 28pt;
     margin-bottom: 5px;
 }
 
 .resume-header p {
-    color: #555555;
-    margin: 0;
+    font-size: 14pt;
+    color: #555;
 }
 
-.resume-section {
-    margin-bottom: 30px;
-}
-
-.resume-section h2 {
+.education h2,
+.skills h2,
+.experience h2 {
     font-size: 18pt;
-    color: #222222;
-    border-bottom: 1px solid #999999;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+    margin-top: 25px;
 }
 
-.resume-entry {
-    margin-bottom: 25px;
+.education h3,
+.experience h3 {
+    font-size: 16pt;
+    margin-bottom: 3px;
 }
 
-.resume-entry h3 {
-    font-size: 15pt;
-    color: #222222;
-    margin: 0 0 4px 0;
+.education p,
+.experience p {
+    font-size: 14pt;
+    margin-top: 0;
 }
 
-.resume-entry p {
-    color: #333333;
-    margin: 0 0 4px 0;
+.skills ul {
+    padding-left: 25px;
 }
 
-.resume-subtitle {
-    font-weight: 600;
-    color: #444444;
+.experience ul {
+    padding-left: 25px;
 }
 
-.resume-date {
-    font-size: 12pt;
-    color: #666666;
-}
-
-.resume-job-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 15px;
-}
-
-.resume-job-header h3 {
-    margin: 0;
-}
-
-.resume-job-header span {
-    color: #666666;
-    font-size: 12pt;
-    white-space: nowrap;
-}
-
-.resume-entry ul {
-    padding-left: 22px;
-    margin-top: 8px;
-}
-
-.resume-entry li {
-    color: #333333;
-    margin-bottom: 6px;
-    line-height: 1.5;
-}
-
-.skills-list {
-    padding-left: 22px;
-}
-
-.skills-list li {
-    color: #333333;
-    margin-bottom: 8px;
+.experience li,
+.skills li {
+    font-size: 14pt;
+    margin-bottom: 5px;
+    line-height: 1.4;
 }
 
 
@@ -336,46 +234,31 @@ img.profile {
 
 img.header {
     width: 100%;
-    display: block;
 }
 
 img.logo {
-    width: 18px;
+    width: 15px;
 }
 
 
 /* Responsive Home Page */
 
 @media (max-width: 768px) {
-    .profile {
-        width: 175px;
-        height: 175px;
+
+    .about-me {
+        flex-direction: column;
+        text-align: center;
     }
 
-    #projectsAccordion {
-        width: 100%;
-    }
-
-    .resume-job-header {
-        display: block;
-    }
-
-    .resume-job-header span {
-        display: block;
-        margin-top: 3px;
-    }
 }
 
 
 /* Small Screens */
 
 @media (max-width: 576px) {
+
     body {
         font-size: 12pt;
-    }
-
-    h1 {
-        font-size: 21pt;
     }
 
     .profile {
@@ -383,23 +266,4 @@ img.logo {
         height: 175px;
     }
 
-    .download-container {
-        text-align: center;
-    }
-
-    .hobby-card {
-        padding: 20px;
-    }
-
-    .hobby {
-        max-width: 200px;
-    }
-
-    .resume {
-        padding: 20px;
-    }
-
-    .resume-header h1 {
-        font-size: 24pt;
-    }
 }
