@@ -11,15 +11,16 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
             rel="stylesheet">
 
-        <link rel="stylesheet" href="resources/css/styles.css">
+        <link rel="stylesheet" href="../resources/css/styles.css">
     </head>
 
     <body>
 
         <header>
-            <img src="resources/img/Website_Header.png"
-                 alt="Isha Shah"
-                 class="header">
+            <img
+                src="../resources/img/Website_Header.png"
+                alt="Isha Shah"
+                class="header">
         </header>
 
 
@@ -41,13 +42,14 @@
 
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-center"
-                     id="mainNav">
+                <div
+                    class="collapse navbar-collapse justify-content-center"
+                    id="mainNav">
 
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="home.html">
                                 Home
                             </a>
                         </li>
@@ -84,7 +86,7 @@
             <div class="download-container">
 
                 <a
-                    href="resources/Resume_Sep'26.pdf"
+                    href="../resources/Resume_Sep'26.pdf"
                     download
                     class="btn btn-primary">
 
@@ -95,7 +97,7 @@
             </div>
 
 
-            <section>
+            <section class="resume">
 
                 <div class="resume-header">
 
@@ -104,69 +106,95 @@
                     </h1>
 
                     <p>
-                        shahisha116@gmail.com | 720-975-4871 | Colorado
+                        shahisha116@gmail.com | Colorado
                     </p>
 
                 </div>
 
 
-                <div class="row g-4">
-
-
-                    <!-- Education -->
-                    <div class="col-12 col-lg-5">
-
-                        <div class="education">
-
+                <div class="row g-5">
+                    <div class="col-12 col-lg-4">
+                        <section class="resume-section">
                             <h2>
                                 Education
                             </h2>
 
-                            <h3>
-                                University of Colorado Boulder
-                            </h3>
+                            <article class="resume-entry">
 
-                            <p>
-                                Bachelor of Science in Computer Science |
-                                Expected May 2029
-                            </p>
+                                <h3>
+                                    University of Colorado Boulder
+                                </h3>
 
-                            <h3>
-                                Skyline High School
-                            </h3>
+                                <p class="resume-subtitle">
+                                    Bachelor of Science in Computer Science
+                                </p>
 
-                            <p>
-                                P-tech Valedictorian and earned an Associate
-                                degree in Applied Science. | May 2025
-                            </p>
+                                <p class="resume-date">
+                                    Expected May 2029
+                                </p>
 
-                            <h3>
-                                Front Range Community College
-                            </h3>
+                            </article>
 
-                            <p>
-                                Associate Degree in Computer Information Systems |
-                                May 2025
-                            </p>
+                            <article class="resume-entry">
 
-                        </div>
+                                <h3>
+                                    Skyline High School
+                                </h3>
 
-                    </div>
+                                <p class="resume-subtitle">
+                                    P-tech Valedictorian
+                                </p>
 
+                                <p>
+                                    Associate Degree in Applied Science
+                                </p>
 
-                    <!-- Skills and Experience -->
-                    <div class="col-12 col-lg-7">
+                                <p class="resume-date">
+                                    May 2025
+                                </p>
 
-                        <div class="skills">
+                            </article>
+
+                            <article class="resume-entry">
+
+                                <h3>
+                                    Front Range Community College
+                                </h3>
+
+                                <p class="resume-subtitle">
+                                    Associate Degree in Computer Information Systems
+                                </p>
+
+                                <p class="resume-date">
+                                    May 2025
+                                </p>
+
+                            </article>
+
+                        </section>
+
+                        <section class="resume-section">
 
                             <h2>
                                 Skills
                             </h2>
 
-                            <ul>
+                            <ul class="skills-list">
 
                                 <li>
-                                    Technical: HTML, Python, C++
+                                    HTML
+                                </li>
+
+                                <li>
+                                    Python
+                                </li>
+
+                                <li>
+                                    C++
+                                </li>
+
+                                <li>
+                                    Web Development
                                 </li>
 
                                 <li>
@@ -175,96 +203,156 @@
 
                             </ul>
 
-                        </div>
+                        </section>
+
+                    </div>
 
 
-                        <div class="experience">
+                    <div class="col-12 col-lg-8">
+
+                        <section class="resume-section">
 
                             <h2>
                                 Work Experience
                             </h2>
 
-                            <h3>
-                                International Business Machines
-                            </h3>
 
-                            <p>
-                                Network Infrastructure Co-op |
-                                August 2025 - Present
-                            </p>
+                            <article class="resume-entry">
 
-                            <ul>
-                                <li>
-                                    Continued the parser program I worked on
-                                    during the summer.
-                                </li>
+                                <div class="resume-job-header">
 
-                                <li>
-                                    Worked on a dashboard showing the status
-                                    of different network objects.
-                                </li>
-                            </ul>
+                                    <h3>
+                                        International Business Machines
+                                    </h3>
 
+                                    <span>
+                                        August 2025 – Present
+                                    </span>
 
-                            <h3>
-                                University of Colorado Boulder
-                            </h3>
+                                </div>
 
-                            <p>
-                                Journey Leader |
-                                June 2026 - August 2026
-                            </p>
+                                <p class="resume-subtitle">
+                                    Network Infrastructure Co-op
+                                </p>
 
-                            <ul>
-                                <li>
-                                    Helped 6,000+ first-year and transfer
-                                    students with orientation and fall welcome
-                                    activities.
-                                </li>
-                            </ul>
+                                <ul>
+
+                                    <li>
+                                        Continued development of a parser
+                                        program originally created during the
+                                        summer internship.
+                                    </li>
+
+                                    <li>
+                                        Worked on a dashboard displaying the
+                                        status of different network objects.
+                                    </li>
+
+                                </ul>
+
+                            </article>
 
 
-                            <h3>
-                                University of Colorado Boulder
-                            </h3>
+                            <article class="resume-entry">
 
-                            <p>
-                                Undergraduate Research Assistant |
-                                January 2026 - April 2026
-                            </p>
+                                <div class="resume-job-header">
 
-                            <ul>
-                                <li>
-                                    Worked on a study to explore how engineers'
-                                    experiences, competencies, and values have
-                                    shaped their career trajectories.
-                                </li>
-                            </ul>
+                                    <h3>
+                                        University of Colorado Boulder
+                                    </h3>
+
+                                    <span>
+                                        June 2026 – August 2026
+                                    </span>
+
+                                </div>
+
+                                <p class="resume-subtitle">
+                                    Journey Leader
+                                </p>
+
+                                <ul>
+
+                                    <li>
+                                        Helped more than 6,000 first-year and
+                                        transfer students with orientation and
+                                        fall welcome activities.
+                                    </li>
+
+                                </ul>
+
+                            </article>
 
 
-                            <h3>
-                                International Business Machines
-                            </h3>
+                            <article class="resume-entry">
 
-                            <p>
-                                Level Two Intern- Network Infrastructure |
-                                June 2025 - August 2025
-                            </p>
+                                <div class="resume-job-header">
 
-                            <ul>
-                                <li>
-                                    Developed a Python program that parses YAML
-                                    files, tallies specific parts, and is
-                                    searchable.
-                                </li>
+                                    <h3>
+                                        University of Colorado Boulder
+                                    </h3>
 
-                                <li>
-                                    Helped create the front-end using Python
-                                    that displays the output in a dashboard.
-                                </li>
-                            </ul>
+                                    <span>
+                                        January 2026 – April 2026
+                                    </span>
 
-                        </div>
+                                </div>
+
+                                <p class="resume-subtitle">
+                                    Undergraduate Research Assistant
+                                </p>
+
+                                <ul>
+
+                                    <li>
+                                        Contributed to a study exploring how
+                                        engineers' experiences, competencies,
+                                        and values have shaped their career
+                                        trajectories.
+                                    </li>
+
+                                </ul>
+
+                            </article>
+
+
+                            <article class="resume-entry">
+
+                                <div class="resume-job-header">
+
+                                    <h3>
+                                        International Business Machines
+                                    </h3>
+
+                                    <span>
+                                        June 2025 – August 2025
+                                    </span>
+
+                                </div>
+
+                                <p class="resume-subtitle">
+                                    Level Two Intern – Network Infrastructure
+                                </p>
+
+                                <ul>
+
+                                    <li>
+                                        Developed a Python program that parses
+                                        YAML files, tallies specific components,
+                                        and provides searchable results.
+                                    </li>
+
+                                    <li>
+                                        Helped develop a Python-based front end
+                                        that displays program output in a
+                                        dashboard.
+                                    </li>
+
+                                </ul>
+
+                            </article>
+
+                        </section>
 
                     </div>
 
@@ -278,8 +366,8 @@
         <footer class="container text-center py-4">
 
             <img
-                src="resources/img/linkedin.png"
-                alt="linkedin logo"
+                src="../resources/img/linkedin.png"
+                alt="LinkedIn logo"
                 class="logo">
 
             <a href="https://www.linkedin.com/in/ishashah06/">
