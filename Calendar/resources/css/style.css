@@ -1,0 +1,53 @@
+h1{
+  text-align: center;
+  padding-top: 2%;
+}
+body {
+  height: 100%;
+  background-color: #f2f2f2;
+  }
+  
+  .event:hover {
+  cursor: pointer;
+  }
+  
+  .hidden {
+  visibility: hidden;
+  height: 0;
+  }
+  
+  #calendar {
+  height: 100vh !important;
+  }
+
+.custom-container {
+  width: 100%;
+  padding: 20%;
+}
+
+.category-social {
+  background-color: #d8c4f1;
+  color: #3d3150;
+}
+
+.category-work {
+  background-color: #b9dcf5;
+  color: #29445a;
+}
+
+.category-personal {
+  background-color: #c7e8d0;
+  color: #34513d;
+}
+
+.category-academic {
+  background-color: #f3c4b3;
+  color: #5a3930;
+}
+
+.category-social a,
+.category-work a,
+.category-personal a,
+.category-academic a {
+  color: inherit;
+}
